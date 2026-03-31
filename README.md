@@ -57,8 +57,6 @@ dim_sex (3 rows) ←── fact_observation (18,923 rows) ──→ dim_indicato
 
                                                           dim_domain (11 rows)
 
-                                                       (linked via dim_indicator.domain)
-
 ```
 (linked via dim_indicator.domain)
 
