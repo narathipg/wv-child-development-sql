@@ -41,13 +41,25 @@ Database Schema
 
 Star Schema — 5 tables, 18,923 rows
 
-                dim_country (7 rows)
-                    ↑ country_code
-                    |
+```
+
+                    dim_country (7 rows)
+
+                        ↑ country_code
+
+                        |
+
 dim_sex (3 rows) ←── fact_observation (18,923 rows) ──→ dim_indicator (83 rows)
-sex_code ↑                                                  ↑ indicator_code
-|
-dim_domain (11 rows)
+
+   sex_code ↑                                                  ↑ indicator_code
+
+                                                                |
+
+                                                          dim_domain (11 rows)
+
+                                                       (linked via dim_indicator.domain)
+
+```
 (linked via dim_indicator.domain)
 
 Tables
