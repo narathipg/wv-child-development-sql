@@ -43,7 +43,7 @@ Star Schema — 5 tables, 18,923 rows
 
 ```
 
-                    dim_country (7 rows)
+                      dim_country (7 rows)
 
                         ↑ country_code
 
@@ -61,11 +61,9 @@ dim_sex (3 rows) ←── fact_observation (18,923 rows) ──→ dim_indicato
 (linked via dim_indicator.domain)
 
 Tables
-
 fact_observation — 18,923 rows
 
 id, country_code, indicator_code, sex_code, year, value
-
 lower_bound, upper_bound, data_source, obs_status
 
 dim_country — 7 rows
